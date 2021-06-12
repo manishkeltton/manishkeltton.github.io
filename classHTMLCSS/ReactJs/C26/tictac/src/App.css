@@ -1,0 +1,13 @@
+.tictac {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.row-1, .row-2, .row-3{
+    display: inline;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}

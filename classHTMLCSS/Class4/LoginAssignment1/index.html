@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .header{
+            background-color: blue;
+            height: 50px;
+        }
+        .header .search{
+            float: left;
+            height: 40px;
+            width: 450px;
+            padding: 0 0 0 8px;
+            margin: 5px 10px 10px 2px;
+            position: relative;
+        }
+       
+        .header img{
+           width: 120px;
+           float: left;
+           height: 35px;
+           margin:8px 0 0 145px;
+       }
+       .header .search-btn button{
+           float: left;
+           width: 50px;
+           height: 35px;
+           position: absolute;
+           background-color: #faf1f1;
+           border: none;
+           margin: 3px 600px 5px 0;
+           top: 5px;
+           right: 0px;
+       }
+       .header .empty-space button{
+          margin-left: 400px;
+          float: left;
+          background-color: blue;
+        }
+        .dropbtn {
+            background-color: blue;
+            color: white;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {  
+            background-color: #ca3d3d
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #c90de2;
+        }
+        /* Implementation of Login page */
+        .login-page{
+            margin: 20px 0 0 250px;
+            padding-bottom: 50px;
+            height: 500px;
+            width: 70%;
+            padding: 15px;       
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);     
+        }
+        .left-login{
+            background-color:blue;
+            float:left;
+            width: 30%;
+            padding: 50px 0 100px 30px;
+            color: white;
+            padding-bottom: 56px;
+        }
+
+        .right-login{
+            width: 66%;
+            float:right;
+            background-color: #b2bdb2;
+            padding-bottom: 7px;
+        }
+        .username, .password, .tnc, .login-btn {
+            margin: 40px;
+            width: 90%;
+            height: 25px;
+            position: relative;
+            /* letter-spacing: 0.5px; */
+        }
+        .username input, .password input{
+            width: 70%;
+            height: 95%;
+            padding: 8px;
+            border:none;
+            letter-spacing:1px;
+            border-bottom: 1px solid black;
+        }
+ 
+        .btn {
+            width: 75%;
+            height: 30px;
+            font-size: 20px;
+            background-color: orangered;
+            color: white;
+            border: none;
+        }
+        .tnc span{
+            font-weight: normal;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .login-page img {
+           width: 95%;
+           margin-top: 180px;
+           height: 120px;
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <div class="search-btn">
+            <form>
+                <input type="search" class="search" placeholder="Search for Products, brand and more" />
+                <button>search</button>
+            </form>
+        </div>
+            <div class="empty-space"><button disabled></button></div>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="#">Notification</a>
+                <a href="#">Sell on Flipkart</a>
+                <a href="#">24*7 Customer Care</a>
+                <a href="#">Advertise</a>
+                <a href="#">Download App</a>
+              </div>
+          </div>
+    </header>
+    <div class="login-page">
+        <div class="left-login">
+           <h2>Login</h2> 
+           <p>Get access to your Orders,</p><p> Wishlist and Recommendations</p><br/>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZoCHvln8vQyIa236V-Y5az1hSX_McXPQFA&usqp=CAU" alt="" />
+        </div>
+        <diV class="right-login">
+            <form>
+                <div class="username">
+                    <input type="text" name="username" placeholder="Email/Mobile number" />
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="Password" />
+                    <a href="#" style="text-decoration:none; color:blue; float: right; margin-right: 150px; position: absolute; top: 18px;right: 0px; font-weight: normal; ">Forgot password?</a>
+                </div>
+                <div class="tnc">
+                    <span>By Continuing you agree to Flipkart's <a href="#" style="color:blue; text-decoration:none;"> Terms Of Use</a> and<a href="#" style="color:blue; text-decoration:none;"> Privacy Policy</a></span>
+                </div>
+                <div class="login-btn">
+                    <button type="submit" class="btn" >Login</button>
+                </div>
+            </form>
+            <div style="margin: 20px 20px 20px 232px; color: wheat">OR</div>
+            <div style="margin: 20px 155px 20px 45px; padding: 20px;  
+                       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);     
+                       background-color:white;
+                       text-align: center;">
+                <a href="#" style="text-decoration:none; font-weight:normal; ">Request OTP</a>  
+            </div>
+            <div style="margin: 50px 20px 20px 40px;">
+                <a href="#">New to Flipkart?</a>
+                <a href="#"> Create an account</a>
+            </div>    
+        </diV>
+    </div>
+</body>
+</html>

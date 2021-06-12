@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //Global scope
+      var a = 10;
+      var name = "Manish";
+      // Named function call from anyWhere.
+      // Anonymous function call from after initialisation
+      function helloWorld() {
+        // var name;
+        console.log("init helloWorld >>", name);
+        name = "Anish";
+        console.log("4. helloWorld >>", name);
+        // console.log("helloWorld >>", window.name);
+      }
+      helloWorld();
+
+      console.log("init Global >>", name);
+
+      //Local Scope
+      function hello() {
+        var name = "Rudra";
+        console.log("1. hello >>", name);
+      }
+      hello();
+
+      function logName() {
+        console.log("2. logName >>", name);
+      }
+      logName();
+
+    //   function helloWorld() {
+    //     // var name;
+    //     console.log("init helloWorld >>", name);
+    //     name = "Anish";
+    //     console.log("3. helloWorld >>", name);
+    //     // console.log("helloWorld >>", window.name);
+    //   }
+
+      console.log("5. Modify Global >>", name);
+    </script>
+
+    <script src="index.js"></script>
+    <script src="blockscope.js"></script>
+    <script>
+      console.log(a);
+    </script>
+  </head>
+  <body>
+      Lexical SCope!!!
+  </body>
+</html>

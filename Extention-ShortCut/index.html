@@ -1,0 +1,311 @@
+
+<!-- code --list-extensions --show-versions -->
+    <!-- 
+        aaron-bond.better-comments@2.1.0
+        alefragnani.project-manager@12.1.0
+        christian-kohler.path-intellisense@2.3.0
+        CoenraadS.bracket-pair-colorizer@1.0.61
+        dbaeumer.vscode-eslint@2.1.20
+        dsznajder.es7-react-js-snippets@3.1.1
+        eamodio.gitlens@11.4.1
+        EditorConfig.EditorConfig@0.16.4
+        esbenp.prettier-vscode@6.3.2
+        formulahendry.auto-rename-tag@0.1.6
+        kiteco.kite@0.142.0
+        pnp.polacode@0.3.4
+        qezhu.gitlink@0.6.1
+        ritwickdey.LiveServer@5.6.1
+        walkme.web-developer-extension-pack@0.0.4
+        WallabyJs.quokka-vscode@1.0.363
+        xabikos.JavaScriptSnippets@1.8.0 
+    -->
+
+<!-- for create basic Html -> ! or doc or html:5 -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- Child Node -->
+
+        <!-- for create child Element -> nav>ul>li -->
+        <nav>
+          <ul>
+            <li></li>
+          </ul>
+        </nav>
+    
+        <!-- for create same level tag -> div+p+blockquete -->
+        <div></div>
+        <p></p>
+        <h></h>
+    
+        <!-- for use at same time -> div+div>p>span+span -->
+        <div></div>
+        <div>
+          <p><span></span><span></span></p>
+        </div>
+    
+        <!-- for presenting tag outside -> div>p+span^bq -->
+        <div>
+            <p></p>
+            <span></span>
+        </div>
+        <blockquote></blockquote>
+    
+        <div></div>
+        <div>
+            <p>
+                <span><em></em></span>
+                <blockquote></blockquote>
+            </p>
+        </div>
+    
+        <!-- outside two div -> div+div>p>span>em^^bq-->
+        <div></div>
+        <div>
+            <p><span><em></em></span></p>
+            <blockquote></blockquote>
+        </div>
+        
+    <!-- end child node -->
+
+    <!-- id and classes -->
+    
+        <!-- id -> div#header -->
+        <id id="header"></id>
+    
+        <!-- class -> div.header -->
+        <div class="header"></div>
+    
+        <!-- form -> form#search.width -->
+        <form action="" id="search" class="width"></form>
+    
+        <!-- multiple classes -> p.class1.class2.class3 -->
+        <p class="class1 class2 class3"></p>
+    
+    <!-- end id and class -->
+
+    <!-- list items -->
+
+        <!-- ul>li -->
+           <ul>
+               <li></li>
+           </ul>
+
+        <!-- ul>li*6 -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+        <!-- ul>li.items*6 -->
+        <ul>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+        </ul>
+        
+        <!-- ul>li.items$*6 -->
+        <ul>
+            <li class="items1"></li>
+            <li class="items2"></li>
+            <li class="items3"></li>
+            <li class="items4"></li>
+            <li class="items5"></li>
+            <li class="items6"></li>
+        </ul>
+
+        <!-- ul>li.items*6>a -->
+        <ul>
+            <li class="items"><a href=""></a></li>
+            <li class="items"><a href=""></a></li>
+            <li class="items"><a href=""></a></li>
+            <li class="items"><a href=""></a></li>
+            <li class="items"><a href=""></a></li>
+            <li class="items"><a href=""></a></li>
+        </ul>
+
+        <!-- ul>li.items$$*6 -->
+        <ul>
+            <li class="items01"></li>
+            <li class="items02"></li>
+            <li class="items03"></li>
+            <li class="items04"></li>
+            <li class="items05"></li>
+            <li class="items06"></li>
+        </ul>
+
+    <!-- end list items -->
+        
+    <!-- h1 tag  -->
+        <!-- h$[title="item$"]{This is header $}*4 -->
+        <h1 title="item1">This is header 1</h1>
+        <h2 title="item2">This is header 2</h2>
+        <h3 title="item3">This is header 3</h3>
+        <h4 title="item4">This is header 4</h4>
+
+    <!-- elements in html -->
+
+        <!-- attributes: [] add text: {} -->
+
+        <!-- p[title="Hello world"] -->
+        <p tittle="Hello world"></p>
+
+        <!-- td[rowspan=2 colspan=3 title="hello"] -->
+        <td rowspan="2" colspan="3" title="hello"></td>
+
+        <!-- div[a="value1" b="value2"] -->
+        <div a="value1" b="value2"></div>
+
+        <!-- [a="value1" b="value2"] -->
+        <div a="value1" b="value2"></div>
+
+        <!-- a{click me} -->
+        <a href="">click me</a>
+
+        <!-- p>{Click me}+a{click me again}{...} -->
+        <p>Click me<a href="">click me again</a>...</p>
+
+    <!-- lorem ipsum -->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestiae fugiat aperiam. Consectetur deserunt quos dolores excepturi assumenda impedit, quidem eum quas debitis, similique ducimus reiciendis temporibus quasi qui quaerat.
+
+        <!-- lorem*5 -->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita placeat vitae veniam illo obcaecati ullam aliquid aut, aliquam quos molestias, iusto modi ex eum dolore repudiandae, distinctio error unde amet.
+        Odit ducimus beatae quam repellendus numquam laboriosam commodi, porro architecto. Laboriosam illo cumque quaerat expedita ad corporis, commodi assumenda nesciunt doloremque tenetur ratione debitis labore enim veniam perferendis! Sint, facilis!
+        Beatae, tenetur dignissimos consectetur ipsa eligendi ex tempora ratione praesentium cupiditate aliquam reprehenderit ut id magnam quasi possimus quidem qui, perferendis accusantium aliquid illo neque aut laboriosam error totam. Ut?
+        Et, facilis asperiores! Eaque consectetur tempora, similique minus exercitationem eligendi alias sequi itaque, nam totam quisquam sint. Dolore mollitia dolores repudiandae animi libero possimus, consectetur cumque vel, veniam officiis dicta!
+        Minus veniam, laboriosam eligendi ut reprehenderit, a voluptates rem rerum qui, ducimus nihil necessitatibus! A consequatur harum illo aspernatur eos magni eum voluptatibus totam voluptate! Aperiam incidunt deserunt repudiandae placeat.
+
+        
+        <!-- ul.generic-list>lorem*10.item$ -->
+        <ul class="generic-list">
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque explicabo eligendi sapiente, a aperiam magnam ipsam iure. Voluptates voluptate, eum minus architecto fuga vel atque corporis nobis at? Asperiores, ut!</li>
+            <li>Iusto quia consequatur deleniti, tempore veritatis et obcaecati provident deserunt natus asperiores officia consequuntur quibusdam vero, reprehenderit, dignissimos pariatur ipsam assumenda fugiat magni repellat corporis illo debitis. Error, necessitatibus cum!</li>
+            <li>Dolores perspiciatis, praesentium consequatur enim ex tempore in eum hic non omnis sed sint numquam eaque provident rem suscipit voluptate natus. Id nemo necessitatibus optio facere adipisci. Debitis, doloremque voluptatibus?</li>
+            <li>Unde sit voluptatem blanditiis maxime obcaecati quis, placeat dolorem quam, consectetur et eveniet vel quas eum, est rem illum aliquid. Quod dolorum neque, architecto a temporibus id minus. Quidem, corrupti?</li>
+            <li>Corrupti ab, sapiente quia molestiae recusandae sit iure aliquam quae natus officia ullam a at dicta laborum dolores! Hic sequi iste quas debitis maiores soluta voluptates animi odio numquam eaque!</li>
+            <li>Rerum ipsa iusto natus. Cupiditate, illo non molestias excepturi saepe ex error autem ipsum voluptates exercitationem recusandae ad culpa commodi pariatur earum laboriosam. Deleniti illo consequatur adipisci debitis omnis magni.</li>
+            <li>Itaque, eos, dolores eius modi unde exercitationem quia voluptatibus dicta adipisci soluta nostrum cumque delectus blanditiis necessitatibus voluptatum, enim laudantium accusantium aut esse beatae quibusdam accusamus odit libero quidem. Amet!</li>
+            <li>Voluptate cum debitis, fugiat assumenda ea, suscipit excepturi aspernatur iusto dolor optio repellat expedita, tempore doloremque? Ipsa ad cum provident qui laboriosam repellat, aliquam asperiores quidem minima possimus ea beatae?</li>
+            <li>Eius iure quam quisquam suscipit veniam ut enim necessitatibus fuga, consectetur doloribus dignissimos sequi, quis consequatur vitae placeat asperiores. Laudantium architecto aliquam inventore, quo explicabo est labore ipsum id sed!</li>
+            <li>Quibusdam voluptatum quaerat voluptate corporis assumenda suscipit, vitae numquam dolor fugit nostrum laboriosam rem voluptates voluptas soluta dolores aperiam minus sapiente mollitia facere magnam et dicta sit tempore? Recusandae, eos?</li>
+        </ul>
+
+        <!-- table>.row>.new -->
+        <table>
+            <tr class="row">
+                <td class="new"></td>
+            </tr>
+        </table>
+
+        <p><em></em></p>
+
+        <!-- div+header+ul>li*3{items$}^footer>ul>li -->
+        <div></div>
+        <header></header>
+        <ul>
+            <li>items1</li>
+            <li>items2</li>
+            <li>items3</li>
+        </ul>
+        <footer>
+            <ul>
+                <li></li>
+            </ul>
+        </footer>
+
+        <!-- div>(header>ul>li*3>a)+(footer>li) -->
+        <div>
+            <header>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </header>
+            <footer>
+                <li></li>
+            </footer>
+        </div>
+
+        <a href=""></a>
+
+        <!-- a:link -->
+        <a href="http://"></a>
+
+        <!-- a:mail -->
+        <a href="mailto:"></a>
+
+        <!-- h1, cmd, br, img, source, iframe, area, form, label, input, button, link, meta, script -->
+            <h1></h1>
+
+            <command>
+
+            <br>
+
+            <img src="" alt="">
+
+            <source media="(min-width: )" srcset="">
+
+            <iframe src="" frameborder="0"></iframe>
+
+            <area shape="rect" coords="" href="" alt="">
+
+            <area shape="" coords="" href="" alt="">
+
+            <area shape="circle" coords="" href="" alt="">
+
+            <area shape="poly" coords="" href="" alt="">
+
+            <form action=""></form>
+
+            <form action="" method="get"></form>
+
+            <form action="" method="post"></form>
+
+            <label for=""></label>
+
+            <input type="text">
+            
+            <input type="button" value="">
+
+            <input type="checkbox" name="" id="">
+
+            <input type="color" name="" id="">
+
+            <input type="email" name="" id="">
+
+            <input type="image" src="" alt="">
+
+            <button disabled="disabled"></button>
+
+            <button type="submit"></button>
+
+
+            <link rel="stylesheet" href="">
+            <link rel="stylesheet" href="style.css">
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="print.css" media="print">
+            <link rel="apple-touch-icon" href="favicon.png">
+            <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS">
+
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <script src="script.js"></script>
+
+    </body>
+</html>
