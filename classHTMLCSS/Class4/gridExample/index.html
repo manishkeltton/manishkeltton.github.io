@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(112, 107, 107);
+      }
+      .f-11 {
+        color: white;
+        margin: 2% 20% 0 60%;
+        padding: 1.5% 0 1.5% 2%;
+        background-color: rgb(92, 90, 90);
+      }
+
+      .f-11 span {
+        border: 1px solid white;
+        padding: 2%;
+      }
+
+      .main-container {
+        width: 95%;
+        height: 85vh;
+        margin: 0 8% 0 2%;
+        border: 5px solid rgba(196, 186, 186, 0.993);
+        background-color: rgba(196, 186, 186, 0.993);
+        color: white;
+        border-radius: 2%;
+      }
+
+      .container {
+        width: 95%;
+        height: 60%;
+        margin: 2% 8% 0 2%;
+        padding: 1%;
+        border-radius: 1.5%;
+        border: 5px solid rgba(179, 175, 175, 0.973);
+        background-color: rgba(185, 179, 179, 0.986);
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 2% 2%;
+      }
+
+      .footer-container {
+        width: 22%;
+        height: 32%;
+        margin: 1% 0 4% 40%;
+        border: 1px solid rgba(0, 0, 0, 0.596);
+        background-color: rgba(196, 186, 186, 0.993);
+        border-radius: 4%;
+      }
+
+      .grid-item {
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.774);
+          border-radius: 10%;
+          background-color:rgba(0, 0, 0, 0.774);
+      }
+      .item01 {
+          grid-column: 1 / span 2;
+      }
+      .item24 {
+        grid-column: 12 / span 2;
+
+      }
+      .item25 {
+          grid-column: 1 / span 2;
+      }
+      .item37 {
+          grid-column: 1 /span 2;
+      }
+      .item47 {
+        grid-column: 12 / span 2;
+      }
+      .item48 {
+        grid-column: 1 /span 2;
+      }
+      .item56 {
+        /* grid-column: 11 / span 2; */
+      }
+      .item64 {
+        grid-column: 5 / span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="f-11">Press <span>F-11</span> to exit full screen</div>
+    <div class="main-container">
+      <div class="container">
+        <div class="grid-item item01">1</div>
+        <div class="grid-item item02">2</div>
+        <div class="grid-item item03">3</div>
+        <div class="grid-item item04">4</div>
+        <div class="grid-item item05">5</div>
+        <div class="grid-item item06">6</div>
+        <div class="grid-item item07">7</div>
+        <div class="grid-item item08">8</div>
+        <div class="grid-item item09">9</div>
+        <div class="grid-item item10">10</div>
+        <div class="grid-item item11">11</div>
+        <div class="grid-item item12">12</div>
+        <div class="grid-item item13">13</div>
+        <div class="grid-item item14">14</div>
+        <div class="grid-item item15">15</div>
+        <div class="grid-item item16">16</div>
+        <div class="grid-item item17">17</div>
+        <div class="grid-item item18">18</div>
+        <div class="grid-item item19">19</div>
+        <div class="grid-item item20">20</div>
+        <div class="grid-item item21">21</div>
+        <div class="grid-item item22">22</div>
+        <div class="grid-item item23">23</div>
+        <div class="grid-item item24">24</div>
+        <div class="grid-item item25">25</div>
+        <div class="grid-item item26">26</div>
+        <div class="grid-item item27">27</div>
+        <div class="grid-item item28">28</div>
+        <div class="grid-item item29">29</div>
+        <div class="grid-item item30">30</div>
+        <div class="grid-item item31">31</div>
+        <div class="grid-item item32">32</div>
+        <div class="grid-item item33">33</div>
+        <div class="grid-item item34">34</div>
+        <div class="grid-item item35">35</div>
+        <div class="grid-item item36">36</div>
+        <div class="grid-item item37">37</div>
+        <div class="grid-item item38">38</div>
+        <div class="grid-item item39">39</div>
+        <div class="grid-item item40">40</div>
+        <div class="grid-item item41">41</div>
+        <div class="grid-item item42">42</div>
+        <div class="grid-item item43">43</div>
+        <div class="grid-item item44">44</div>
+        <div class="grid-item item45">45</div>
+        <div class="grid-item item46">46</div>
+        <div class="grid-item item47">47</div>
+        <div class="grid-item item48">48</div>
+        <div class="grid-item item49">49</div>
+        <div class="grid-item item50">50</div>
+        <div class="grid-item item51">51</div>
+        <div class="grid-item item52">52</div>
+        <div class="grid-item item53">53</div>
+        <div class="grid-item item54">54</div>
+        <div class="grid-item item55">55</div>
+        <div class="grid-item item56">56</div>
+        <div class="grid-item item57">57</div>
+        <div class="grid-item item58">58</div>
+        <div class="grid-item item59">59</div>
+        <div class="grid-item item60">60</div>
+        <div class="grid-item item61">61</div>
+        <div class="grid-item item62">62</div>
+        <div class="grid-item item63">63</div>
+        <div class="grid-item item64">64</div>
+        <div class="grid-item item65">65</div>
+        <div class="grid-item item66">66</div>
+        <div class="grid-item item67">67</div>
+        <div class="grid-item item68">68</div>
+        <div class="grid-item item69">69</div>
+      </div>
+      <div class="footer-container"></div>
+    </div>
+  </body>
+</html>
